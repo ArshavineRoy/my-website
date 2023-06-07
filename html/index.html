@@ -4,54 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Arshavine Roy</title>
-    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
-    <!--This is a comment-->
+    <link rel="shortcut icon" href="../resources/favicon/cool-guy.ico" type="image/x-icon">
+
+    <!-- linking fontawesome library is necessary so as to use its icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- styling fontawesome social media icons -->
+<style>
+    .bold-icon {
+        border: 3px solid black;
+        font-weight: bold;
+        border-radius: 15px
+    }
+</style>
 
 </head>
 <body>
-    <nav>
-        <div>
-            <h1> &lt;Arshavine Roy/&gt;</h1>
+
+    <!-- nav bar class to style the nav bar -->
+    <div class="navbar">
+
+        <!-- styling the logo: user clicking it should always return home -->
+        <div id="logo">
+            <a href="" class="logo-title">
+                < Arshavine <span style="color: #EC484D">Roy</span> />
+            </a>
         </div>
-        <div>
+
+        <!-- use nav links class to create a dropdown menu -->
+        <nav class="navlinks">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SERVICES</a></li>
-                <li><a href="">SKILLS</a></li>
-                <li><a href="">CONTACTS</a></li>
-            </ul>
+                <li class="active"><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul> 
+        </nav>
+
+    </div>
+
+    <!-- add margin to the left so the div's content doesn't start at the margin -->
+    <!-- Only added here so that it doesn't cover the footer section -->
+    <div class="content" style="margin-left: 30px;">
+        <div>
+
+            <!-- using <span> tag to color my name -->
+            <h1>
+                Hi, I'm <span style="color: #EC484D">Arshavine Roy</span><br>
+                Fullstack Developer
+            </h1>
+
+            <p>
+                Experienced Full Stack Developer with demonstrated history of working in the internet industry. <br> 
+                Building Web applications with Angular, PHP, Lavarel, Python, Django, Flask, MySQL/Postgress and some other cool libraries and frameworks.<br>
+            </p>
+
+            <!-- Lorem Ipsum -->
+            <h3>
+                Profile:
+            </h3>
+
+            <p>
+                As an experienced Fullstack Developer, I possess a versatile skill set and a strong eye for detail, allowing me to create robust and innovative web applications. With expertise in frontend technologies such as HTML, CSS, and JavaScript, I am proficient in popular frameworks like React, Angular, and Vue.js.<br><br>
+                On the backend, I excel in server-side programming languages like JavaScript (Node.js), Python, or Ruby, utilizing frameworks such as Express.js, Django, or Ruby on Rails. Additionally, I have extensive knowledge of databases like MySQL, PostgreSQL, or MongoDB.<br><br>
+                My proficiency in version control systems like Git and experience with DevOps practices enable me to work efficiently in agile environments. I am adept at collaborating with cross-functional teams to deliver high-quality software solutions within tight deadlines. Continuously expanding my skills, I stay updated on emerging trends and best practices in the software development industry.<br><br>
+                Apart from my technical abilities, I am a strong communicator and value clear and open collaboration. I am dedicated to continuous learning and professional growth, actively participating in industry conferences and online communities. My problem-solving skills and adaptability allow me to tackle complex challenges and find elegant solutions.<br><br>
+                In summary, as a Fullstack Developer, I bring a comprehensive skill set, a passion for innovation, and a commitment to delivering exceptional results. My ability to create impactful web applications, foster strong team dynamics, and stay up-to-date with the latest tools and methodologies make me a valuable asset in any dynamic development environment.
+            </p>
+
+            <!-- adding buttons -->
+            <p>
+                <button class="buttons"><a href="../resources/resume.txt">View Resume</a></button>
+                <button class="buttons"><a href="tel:+254700000000">Contact Me</a></button>
+            </p>
+
+            <!-- fontawesome social media icons -->
+            <a href="https://github.com/ArshavineRoy"><i class="fa fa-github fa-border bold-icon" style="font-size: 40px; margin-right: 10px;"></i></a>
+            <i class="fa fa-linkedin fa-border bold-icon" style="font-size: 40px; font-weight: 30; margin-right: 10px;"></i>
+            <a href="https://twitter.com/arshavinewaema"><i class="fa fa-twitter fa-border bold-icon" style="font-size: 40px; margin-right: 10px;"></i></a>
+            <i class="fa fa-instagram fa-border bold-icon" style="font-size: 40px; margin-right: 10px;"></i>
+
         </div>
-    </nav>
-    <div>
-        <h1>
-            Hi, I'm <span style="color:red">Arshavine Roy</span> <br>
-            Fullstack Developer
-        </h1>
+
+        <div class="svg">
+            <!-- <img src="../images/developer-icon.png" alt="developer image"> -->
+            <img src="../resources/images/build.svg" alt="animated svg image of a developer" width="800" height="350">
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="contact">
+            <h4>
+                CONTACT:
+            </h4>
+
+            <!-- adding a tag to phone and email for contact in the footer -->
+            <p>Phone: <a href="tel:+254700000000">+254700000000</a></p>
+            <p>Email: <a href="mailto:business@arshavine.roy">business@arshavine.roy</a></p>
+
+        </div>
+
+        <!-- "original works of authorship" copyright at the footer -->
         <p>
-            Experienced Full Stack Developer with demonstrated history of working <br>
-            in the internet industry. Building Web applications with Angular, PHP, <br>
-            Lavarel, Python, Django, Flask, MySQL/Postgress and some other cool<br>
-            libraries and frameworks.
+            &copy;2023 Arshavine Roy. All Rights Reserved.
         </p>
-    </div>
-    <div>
-        <ul>
-            <li>View Resume</li>
-            <li>Contact Me</li>
-        </ul>
-    </div>
-    <div>
-        <img src="https://miro.com/app/board/uXjVMBi882E=/?moveToWidget=3458764556241013973&cot=14" alt="GitHub Icon">
-        <img src="https://miro.com/app/board/uXjVMBi882E=/?moveToWidget=3458764556241172934&cot=14" alt="LinkedIn">
-        <img src="https://miro.com/app/board/uXjVMBi882E=/?moveToWidget=3458764556241172934&cot=14" alt="Twitter">
-        <img src="https://miro.com/app/board/uXjVMBi882E=/?moveToWidget=3458764556241172934&cot=14" alt="Google">
-    </div>
-    <div>
-        <!-- <img src="../images/developer-icon.png" alt="developer image"> -->
-        <img src="../images/build.svg" alt="coding animation">
     </div>
     
 </body>

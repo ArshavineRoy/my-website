@@ -1,23 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Roboto';
+  /* padding: 0;
+  margin: 0; */
+  font-family: 'Roboto Slab', serif;
+  background-color: #fff;
+  
 }
 
+/* flex to display :horizontally, box shaddow #64 from https://getcssscan.com/css-box-shadow-examples */
+.navbar {
+  display: flex;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+
+}
+
+/* set nav links same level as logo, uppercase for all text within*/
 nav{
+    margin-left: auto;
+    text-transform: uppercase;
+}
+
+/* remove all decorations from a tags, targetting undelining of hyperlinks */
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+/* optional: remove icon hyperlink decoration on hover */
+a:hover {
+    text-decoration: none;
+}
+
+/* Centering with CSS Flexbox. 'height: 100vh;' makes the container take up the full height of the viewport. */
+.content {
     display: flex;
-    justify-content: space-between;
-    margin: 20px;
-   
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
+/* display nav links list horizontal, remove bullet points */
+.navlinks ul {
+  display: flex;
+  list-style: none;
 }
 
-nav li {
-    padding: 10px;
-    
+/* add space between nav bar links ~ to the right of each */
+.navlinks ul li {
+  padding-right: 100px;
 }
 
+/* set nav links text color and bold */
+.navlinks ul li a {
+    font-weight: 600;
+    color: #173300;
+}
+
+/* customize fontawesome icons */
+.logo-title{
+    font-weight: 900;
+    font-size: 30px;
+    color: black;
+}
+
+/* customize buttons */
+.buttons {
+    font-size: 18px;
+    padding:8px 15px;
+    margin-right: 12px;
+    color: white;
+    background-color: rgb(247, 82, 82);
+    border-radius: 9px;
+    border-color: red;
+  }
+
+.footer{
+    /* margin-left: 0;
+    padding: 0; */
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
+    text-align: center;
+    padding-top: 1px;
+    /* background-color: #f8fcf6; */
+}
+
+/* .contact {
+    text-align: left;
+} */
