@@ -1,1 +1,1 @@
-This is an assignment to create a personal landing page. Nothing much, but I will continuously update it.
+This is an assignment to create a personal landing page. Nothing much, but I will continuously update and improve it.
