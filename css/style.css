@@ -12,13 +12,98 @@ body {
 .navbar {
   display: flex;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+  text-align: center;
 
 }
 
+  /* customize fontawesome icons */
+.logo{
+    font-weight: 950;
+    font-size: 30px;
+    color: black;
+}
+
 /* set nav links same level as logo, uppercase for all text within*/
-nav{
+.navlinks{
     margin-left: auto;
+    text-align: center;
     text-transform: uppercase;
+}
+
+/* display nav links list horizontal, remove bullet points */
+.navlinks ul {
+    display: inline-flex;
+    list-style: none;
+    color: #173300;
+  }
+  
+  /* add space between nav bar links ~ to the right of each */
+.navlinks ul li {
+    /* padding-right: 100px; */
+    width: 110px;
+    margin: 15px;
+    padding: 15px;
+  }
+  
+  /* set nav links text color and bold */
+.navlinks ul li a {
+      font-weight: 600;
+      
+  }
+  
+/* start of sub-menu styling ~ set home as active, define other nav link behavior on hover */
+.active, .navlinks ul li:hover{
+    background-color: #f75252;
+    border-radius: 1px;
+
+} 
+
+
+/* add space between navlink icon and text   */
+.navlinks .fa{
+    margin-right: 8px;
+}
+
+/* hide submenu on navbar, should appear on hover or click */
+.sub-menu-1{
+    display: none;
+}
+
+/* hovering over navlink displays submenu for the 'About' navlink ~ designated as .sub-menu-1*/
+.navlinks ul li:hover .sub-menu-1{
+    display:block;
+    position: absolute;
+    background-color: #fff;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+
+/* submenu characteristics on hover */
+.navlinks ul li:hover .sub-menu-1 ul{
+    display: block;
+    margin: 10px;
+}
+
+
+/* submenu text styling
+.navlinks ul li:hover .sub-menu-1 ul li {
+    width: 15px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background-color: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+remove dotted line below last submenu
+.navlinks ul li:hover .sub-menu-1 ul li:last-child{
+    border-bottom: none;
+} */
+
+/* color change when hovering over submenu to show hyperlink */
+.navlinks ul li:hover .sub-menu-1 ul li a:hover{
+    color: white;
 }
 
 /* remove all decorations from a tags, targetting undelining of hyperlinks */
@@ -41,39 +126,15 @@ a:hover {
     height: 100vh;
 }
 
-/* display nav links list horizontal, remove bullet points */
-.navlinks ul {
-  display: flex;
-  list-style: none;
-}
-
-/* add space between nav bar links ~ to the right of each */
-.navlinks ul li {
-  padding-right: 100px;
-}
-
-/* set nav links text color and bold */
-.navlinks ul li a {
-    font-weight: 600;
-    color: #173300;
-}
-
-/* customize fontawesome icons */
-.logo-title{
-    font-weight: 900;
-    font-size: 30px;
-    color: black;
-}
-
 /* customize buttons */
 .buttons {
     font-size: 18px;
     padding:8px 15px;
     margin-right: 12px;
     color: white;
-    background-color: rgb(247, 82, 82);
+    background-color: #f75252;
     border-radius: 9px;
-    border-color: red;
+    border-color: #f75252;
   }
 
 .footer{

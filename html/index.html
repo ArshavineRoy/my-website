@@ -27,33 +27,74 @@
     <div class="navbar">
 
         <!-- styling the logo: user clicking it should always return home -->
-        <div id="logo">
-            <a href="" class="logo-title">
+        <div class="logo">
+            <p><a href="">
                 < Arshavine <span style="color: #EC484D">Roy</span> />
-            </a>
+            </a></p>
         </div>
 
         <!-- use nav links class to create a dropdown menu -->
         <nav class="navlinks">
             <ul>
-                <li class="active"><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Skills</a></li>
-                <li><a href="">Contacts</a></li>
+                <li class="active">
+                    <a href="">
+                        <i class="fa fa-home"></i>
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-user"></i>
+                        About
+                    </a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">Mission</a></li>
+                            <li><a href="">Vission</a></li>
+                            <li><a href="">Projects</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa fa-briefcase"></i>
+                        Services
+                    </a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="">Web Apps</a></li>
+                            <li><a href="">Mobile Apps</a></li>
+                            <li><a href="">Game Development</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <!-- linking skills nav link to experience section with resume button at the bottom -->
+                    <a href="#experience">
+                        <i class="fa fa-cogs"></i>
+                        Skills
+                    </a>
+                </li>
+                <li>
+                    <!-- linking contact nav link to footer contact section -->
+                    <a href="#contact">
+                        <i class="fa fa-phone"></i>
+                        Contact
+                    </a>
+                </li>
             </ul> 
         </nav>
 
     </div>
 
-    <!-- add margin to the left so the div's content doesn't start at the margin -->
+    <!-- Adding margin to the left so the div's content doesn't start at the margin -->
     <!-- Only added here so that it doesn't cover the footer section -->
     <div class="content" style="margin-left: 30px;">
         <div>
 
             <!-- using <span> tag to color my name -->
             <h1>
-                Hi, I'm <span style="color: #EC484D">Arshavine Roy</span><br>
+                Hi &#128075;, I'm <span style="color: #EC484D">Arshavine Roy</span><br>
                 Fullstack Developer
             </h1>
 
@@ -63,7 +104,7 @@
             </p>
 
             <!-- Lorem Ipsum -->
-            <h3>
+            <h3 id="experience">
                 Profile:
             </h3>
 
@@ -77,15 +118,23 @@
 
             <!-- adding buttons -->
             <p>
-                <button class="buttons"><a href="../resources/resume.txt">View Resume</a></button>
+                <button class="buttons"><a href="../resources/resume.txt" target="_blank">View Resume</a></button>
                 <button class="buttons"><a href="tel:+254700000000">Contact Me</a></button>
             </p>
 
             <!-- fontawesome social media icons -->
-            <a href="https://github.com/ArshavineRoy"><i class="fa fa-github fa-border bold-icon" style="font-size: 40px; margin-right: 10px;"></i></a>
-            <i class="fa fa-linkedin fa-border bold-icon" style="font-size: 40px; font-weight: 30; margin-right: 10px;"></i>
-            <a href="https://twitter.com/arshavinewaema"><i class="fa fa-twitter fa-border bold-icon" style="font-size: 40px; margin-right: 10px;"></i></a>
-            <i class="fa fa-instagram fa-border bold-icon" style="font-size: 40px; margin-right: 10px;"></i>
+            <a href="https://github.com/ArshavineRoy" target="_blank">
+                <i class="fa fa-github fa-border bold-icon" style="font-size: 40px; margin-right: 10px;"></i>
+            </a>
+            <a href="https://ke.linkedin.com/school/moringa-school/people" target="_blank">
+                <i class="fa fa-linkedin fa-border bold-icon" style="font-size: 40px; font-weight: 30; margin-right: 10px;"></i>
+            </a>
+            <a href="https://twitter.com/arshavinewaema" target="_blank">
+                <i class="fa fa-twitter fa-border bold-icon" style="font-size: 40px; margin-right: 10px;"></i>
+            </a>
+            <a href="https://www.instagram.com/arshavine.roy" target="_blank">
+                <i class="fa fa-instagram fa-border bold-icon" style="font-size: 40px; margin-right: 10px;"></i>
+            </a>
 
         </div>
 
@@ -97,7 +146,7 @@
     </div>
 
     <div class="footer">
-        <div class="contact">
+        <div class="contact" id="contact">
             <h4>
                 CONTACT:
             </h4>
