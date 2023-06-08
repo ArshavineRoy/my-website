@@ -120,10 +120,16 @@ a:hover {
 /* Centering with CSS Flexbox. 'height: 100vh;' makes the container take up the full height of the viewport. */
 .content {
     display: flex;
+    margin-left: 30px;
     text-decoration: none;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items:normal; */
     height: 100vh;
+}
+
+.svg{
+    display: inline-flex;
+    align-items: center;
 }
 
 /* customize buttons */
@@ -149,3 +155,13 @@ a:hover {
 /* .contact {
     text-align: left;
 } */
+
+.form{
+    font-size: 18px;
+}
+
+.submit-button{
+    font-size: inherit;
+    background-color: #F9DBB5;
+    border-radius: 5px;
+}
