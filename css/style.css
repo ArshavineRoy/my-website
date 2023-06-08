@@ -156,10 +156,12 @@ a:hover {
     text-align: left;
 } */
 
+/* customizing entire form */
 .form{
     font-size: 18px;
 }
 
+/* customizing submit button on form */
 .submit-button{
     font-size: inherit;
     background-color: #F9DBB5;
